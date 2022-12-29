@@ -1,0 +1,109 @@
+.ChatPage
+  display: flex
+  flex-direction: column
+  padding: 0 !important
+
+  .chat-header
+    display: flex
+    align-items: center
+    gap: 15px
+    height: 60px
+    padding: 0 20px
+    border-bottom: 1px solid #f1f1f1
+    flex-shrink: 0
+
+    .chat-data
+
+      span
+        display: block
+
+        &:first-child
+          font-weight: bold
+
+        &:nth-child(2)
+          font-size: 10pt
+          color: #444
+
+  .messages-history
+    display: flex
+    flex-direction: column
+    gap: 10px 0
+    height: 100%
+    overflow: auto
+    padding: 20px
+
+    .Message
+      position: relative
+      display: flex
+      max-width: calc(100% - 100px)
+      animation: reveal .21s 1 cubic-bezier(0.68, -0.6, 0.32, 1.6) forwards
+
+      @keyframes reveal
+        0%
+          opacity: 0
+
+        100%
+          opacity: 1
+
+      &:first-child
+        margin-top: auto
+
+      .message-bubble
+        display: flex
+        flex-wrap: wrap
+        align-items: flex-end
+        gap: 15px
+        padding: 10px
+        border-radius: 10px 10px 10px 0
+        background: #f6f6f6
+        white-space: pre-wrap
+
+        & > span
+          display: block
+
+        & > .message-info
+          display: flex
+          gap: 3px
+          font-size: 8pt
+          opacity: .9
+          margin-left: auto
+
+          & > svg
+            width: 1em
+            flex-shrink: 0
+            fill: #fff
+
+      &._isMine
+        align-self: flex-end
+
+        .message-bubble
+          background: var(--majorColor)
+          color: #fff
+          border-radius: 10px 10px 0 10px
+
+  .chat-footer
+    border-top: 1px solid #f1f1f1
+    flex-shrink: 0
+    overflow: hidden
+
+    & > form
+      height: 100%
+
+      .field-wrapper
+        flex-wrap: nowrap
+        height: 100%
+
+        textarea
+          padding: 15px 20px
+          width: 100%
+          height: 100%
+
+          &::-webkit-scrollbar
+            width: 0
+
+        button
+          padding: 10px
+
+          & > svg
+            width: 26px
+            fill: var(--majorColor)

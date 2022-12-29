@@ -1,0 +1,134 @@
+$input-padding: 10px
+
+input, button, textarea, select
+  display: block
+  width: 100%
+  min-width: 150px
+  appearance: none
+  border: none
+  background: transparent
+  font: 1em 'Noto Sans', sans-serif
+
+  &._zeroed
+    width: auto
+    min-width: 0
+    padding: 0
+    border: none
+    border-radius: 0
+
+  &._auto-width
+    width: auto
+    min-width: 0
+
+  &:not(textarea):not(._zeroed)
+    height: 45px
+    padding: 0 $input-padding
+
+.label
+  display: block
+  width: 100%
+  font-weight: bold
+  padding-top: 10px
+
+// Text inputs
+input[type='text'],
+input[type='password'],
+textarea
+  border: 2px solid #111
+  border-radius: 5px
+
+  &:focus
+    border-color: var(--majorColor)
+
+  &._zeroed
+    width: auto
+    min-width: 0
+    padding: 0
+    border: none
+    border-radius: 0
+
+textarea
+  resize: none
+  overflow: hidden
+
+button
+  display: flex
+  align-items: center
+  gap: $input-padding
+  background: var(--majorColor)
+  color: #fff
+  padding: 0 $input-padding
+  border-radius: 5px
+  cursor: pointer
+  font-weight: bold
+  border: 2px solid transparent
+  white-space: nowrap
+
+  &._zeroed
+    background: transparent
+    color: #000
+    font-weight: normal
+    align-self: center
+
+  &:disabled
+    background: #ddd
+    cursor: not-allowed
+
+  &:not(:disabled):hover
+    opacity: .9
+
+  & > svg
+    width: 24px
+
+  &:not(._zeroed) > svg
+    fill: #fff
+
+  & > span
+    white-space: inherit
+
+// Field wrapper
+.field-wrapper
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  gap: 10px
+  margin-top: 10px
+
+  & > *:not(.label):not(._auto-width):not(._zeroed):not(.Icon):not(.Checkbox):not(.Radiobox):not(.Range):not(.Switch)
+    flex: 1
+
+  & > *
+    margin-top: 0
+
+  $icon-size: 24px
+
+  &[class*="_iconed"]
+    position: relative
+
+    & > svg
+      position: absolute
+      width: $icon-size
+      top: 50%
+      transform: translate(0, -50%)
+      pointer-events: none
+      opacity: .6
+
+  &._iconed-left
+
+    & > svg
+      left: $input-padding + 2px
+
+    & > input[type="text"],
+    & > input[type="password"],
+    textarea
+      padding-left: calc(#{$icon-size} + #{$input-padding*2} - 2px)
+
+  &._iconed-right
+
+    & > svg
+      right: $input-padding + 2px
+
+    & > input[type="text"],
+    & > input[type="password"],
+    textarea
+      padding-right: calc(#{$icon-size} + #{$input-padding*2} - 2px)

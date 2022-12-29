@@ -1,0 +1,17 @@
+.Checkbox
+  display: flex
+  gap: 10px
+  cursor: pointer
+  align-items: flex-start
+
+  & > *
+    flex-shrink: 0
+
+  & > .icon
+    transition: .21s
+
+    & > svg
+      width: 20px
+
+  &:active > .icon
+    transform: scale(.9)

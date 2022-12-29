@@ -1,0 +1,51 @@
+.ChatsPage
+
+  .chats-list
+    margin-top: 20px
+
+    $chat-item-padding: 20px
+
+    .ChatItem
+      display: flex
+      gap: $chat-item-padding
+      padding: $chat-item-padding
+      background: #f8f8f8
+      border-radius: $chat-item-padding
+      cursor: pointer
+
+      &:not(:first-child)
+        margin-top: 15px
+
+      .chat-data
+        width: calc(100% - #{$chat-item-padding*3.5})
+
+        & > .name-wrapper
+          display: flex
+          gap: 10px
+          justify-content: space-between
+
+          & > span
+            display: block
+            font-weight: bold
+            font-size: 13.5pt
+
+          & > .last-message-data
+            display: flex
+            align-items: center
+            gap: 5px
+            font-size: 8pt
+            flex-shrink: 0
+            transform: translate(10px, -10px)
+
+            & > span
+              display: block
+              color: #444
+
+            & > svg
+              width: 14px
+              height: 14px
+              flex-shrink: 0
+
+        & > .message
+          color: #666
+          font-size: 11pt

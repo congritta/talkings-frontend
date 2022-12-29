@@ -1,0 +1,29 @@
+$width: 40px
+$height: 23px
+
+.Switch
+  position: relative
+  width: $width
+  height: $height
+  border: 2px solid #000
+  border-radius: $height
+  cursor: pointer
+
+  &._active
+    border-color: var(--majorColor)
+
+  .thumb
+    position: absolute
+    top: 2px
+    left: 2px
+    width: calc(#{$height} - 4px - 4px)
+    height: calc(#{$height} - 4px - 4px)
+    border-radius: $height
+    background: #000
+    transition: .32s
+
+  &._active
+
+    .thumb
+      left: calc(100% - $height + 6px)
+      background: var(--majorColor)

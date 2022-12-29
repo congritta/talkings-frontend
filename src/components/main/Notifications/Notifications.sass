@@ -1,0 +1,56 @@
+.Notifications
+  position: fixed
+  bottom: 0
+  right: 0
+  width: 100%
+  max-width: 350px
+  max-height: 100%
+  overflow: auto
+  transition: padding 0
+
+  @media(max-width: 450px)
+    max-width: unset
+    top: 0
+    bottom: unset
+
+  &._padded
+    padding: 30px
+
+    @media(max-width: 450px)
+      padding: 20px
+
+  &:not(._padded)
+    transition-delay: .27s
+
+  .notification
+    position: relative
+    bottom: 0
+    display: flex
+    align-items: center
+    gap: 15px
+    box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0
+    padding: 15px
+    border-radius: 8px
+    background: rgba(#000, .6)
+    color: #fff
+    animation-timing-function: cubic-bezier(0.68, -0.6, 0.32, 1.6)
+
+    &:not(:last-child)
+      margin-bottom: 15px
+
+    & > .badge
+      flex-shrink: 0
+      width: 50px
+
+      & > svg
+        width: 100%
+        fill: #fff
+
+    & > .data
+
+      & > .title
+        font-weight: bold
+
+      & > .description
+        margin-top: -2px
+        font-size: 11pt
