@@ -1,0 +1,152 @@
+[
+  {
+    "id": "a",
+    "text": "Hi!",
+    "peerId": "1",
+    "isMine": true
+  },
+  {
+    "id": "3421",
+    "text": "Hey",
+    "peerId": "1"
+  },
+  {
+    "id": "423a",
+    "text": "What's up?",
+    "peerId": "1",
+    "isMine": true
+  },
+  {
+    "id": "234231",
+    "text": "Is everything okay, how are you?",
+    "peerId": "1"
+  },
+  {
+    "id": "a54654",
+    "text": "Fine",
+    "peerId": "1",
+    "isMine": true
+  },
+  {
+    "id": "a345352",
+    "text": "Shall we go for a walk today?",
+    "peerId": "1",
+    "isMine": true
+  },
+  {
+    "id": "adasd",
+    "text": "Hello",
+    "peerId": "2",
+    "isMine": true
+  },
+  {
+    "id": "34asdasd21",
+    "text": "Hi",
+    "peerId": "2"
+  },
+  {
+    "id": "423asdfegba",
+    "text": "What are you doing?",
+    "peerId": "2",
+    "isMine": true
+  },
+  {
+    "id": "234dfg43tq231",
+    "text": "I sat down to rest",
+    "peerId": "2"
+  },
+  {
+    "id": "234a23tr23r231",
+    "text": "And you?",
+    "peerId": "2"
+  },
+  {
+    "id": "a546asdf354",
+    "text": "I just came from the store. I'm cleaning the room now",
+    "peerId": "2",
+    "isMine": true
+  },
+  {
+    "id": "a34sfa35352",
+    "text": "plainly",
+    "peerId": "2"
+  },
+  {
+    "id": "dfghdfgh",
+    "text": "Have you already gone to the clinic?",
+    "peerId": "3",
+    "isMine": true
+  },
+  {
+    "id": "3tvtjv421",
+    "text": "No",
+    "peerId": "3"
+  },
+  {
+    "id": "4cxxzc23a",
+    "text": "Why? My dad asked me to come in before 2 o'clock",
+    "peerId": "3",
+    "isMine": true
+  },
+  {
+    "id": "23423sdfs321",
+    "text": "My car broke down. There was no one to fix it",
+    "peerId": "3"
+  },
+  {
+    "id": "a54dsfsad654",
+    "text": "Heck! Now I won't make it to the meeting. I need to visit him before 2 o'clock",
+    "peerId": "3",
+    "isMine": true
+  },
+  {
+    "id": "a5fsdfs65asfsf4",
+    "text": "Hi. Can you make lasagna for dinner?",
+    "peerId": "4",
+    "isMine": true
+  },
+  {
+    "id": "a34adsdgretef5352",
+    "text": "No, today we have semolina porridge",
+    "peerId": "4"
+  },
+  {
+    "id": "a54dfdfghsdggdg654",
+    "text": "Ok",
+    "peerId": "4",
+    "isMine": true
+  },
+  {
+    "id": "34tvdf9",
+    "text": "hi mom",
+    "peerId": "5",
+    "isMine": true
+  },
+  {
+    "id": "aef5352",
+    "text": "When you come home, buy and and not juice",
+    "peerId": "5",
+    "isMine": true
+  },
+  {
+    "id": "a54dfdfghs654",
+    "text": "What kind of juice do you want?",
+    "peerId": "5"
+  },
+  {
+    "id": "a3fsdfsf4ads2",
+    "text": "Orange",
+    "peerId": "5"
+  },
+  {
+    "id": "a3fsdfsf4ads3",
+    "text": "Hey there",
+    "peerId": "6"
+  },
+  {
+    "id": "a3fsdfsf4ads4",
+    "text": "Hello",
+    "peerId": "6",
+    "isMine": true
+  }
+]

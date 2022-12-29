@@ -1,0 +1,44 @@
+[
+  {
+    "id": "1",
+    "firstName": "David",
+    "lastName": "Andrews",
+    "username": "david",
+    "color": 1
+  },
+  {
+    "id": "2",
+    "firstName": "Larry",
+    "lastName": "Patterson",
+    "username": "larry",
+    "color": 3
+  },
+  {
+    "id": "3",
+    "firstName": "Marie",
+    "lastName": "Gardner",
+    "username": "gardner",
+    "color": 2
+  },
+  {
+    "id": "4",
+    "firstName": "Leonard",
+    "lastName": "Watkins",
+    "username": "wat123",
+    "color": 0
+  },
+  {
+    "id": "5",
+    "firstName": "Bonnie",
+    "lastName": "Porter",
+    "username": "porter",
+    "color": 4
+  },
+  {
+    "id": "6",
+    "firstName": "Jennie",
+    "lastName": "Turner",
+    "username": "turner",
+    "color": 1
+  }
+]
